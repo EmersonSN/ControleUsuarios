@@ -1,6 +1,8 @@
 const path = require('path')
 
 module.exports = {
-    config: path.resolve(__dirname, 'src', 'config', 'database.js')
+    config: path.resolve(__dirname, 'src', 'config', 'database.js'),
+    'migrations-path': path.resolve(__dirname, 'src', 'database', 'migrations')
 }
-//passando os caminho do arquivo de configurações/credenciais do BD para o sequelize-cli para rodarmos códigos no terminal
+//passando o caminho do arquivo de configurações/credenciais do BD para o sequelize-cli para rodarmos códigos no terminal
+//passando o camingo de store dos arquivos de migrations em caso de uso da ferramenta, neste caso usado para criar uma tabela
