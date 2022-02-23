@@ -29,11 +29,10 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false
       }
-
     });
   },
    down (queryInterface, Sequelize) {//o que será realizado se a migration for desfeita em casos errados
     return queryInterface.dropTable('users');
-     
   }
 };
+/* para rodar a migration e assim a tabela acima seja criada, use no terminal: yarn sequelize db:migrate*/
