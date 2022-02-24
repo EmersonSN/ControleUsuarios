@@ -1,9 +1,7 @@
 const express = require('express')
 const routes = express.Router() //Usando somente a funcionalidade de rotas do express
+const UserController = require('./controllers/UserController')
 
-routes.get('/', (req, res) =>{
-    console.log('Servidor em funcionamento')//teste de conexão
-    return res.json({ id1: 'Funcionando'})//teste de API
-})
+routes.post('/add-user', UserController.store)
 
 module.exports = routes //exportando a funcionalidade routes 

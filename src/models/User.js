@@ -1,13 +1,13 @@
-const { Model, DataTypes  } = require('sequelize')
+const { Model, DataTypes } = require('sequelize')
 
-class User extends Model {
-    static init(sequelize) {
-        super.init({//abaixo, campos da tabela
+class User extends Model{
+    static init(sequelize){
+        super.init({
             nome: DataTypes.STRING,
-            idade: DataTypes.INTEGER,
-            email: DataTypes.STRING
+            email: DataTypes.STRING,
+            idade: DataTypes.INTEGER
         }, {
-            sequelize //arquicos para conexão com o BD
+            sequelize
         })
     }
 }
