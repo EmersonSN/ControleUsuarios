@@ -10,6 +10,11 @@
  <a >NODEMON</a> • 
 </p>
 
+<h4>
+	Chamado de criação de usuário
+	Chamado de listar usuário
+</h4>
+
 <h4 align="center"> 
-	  STATUS: Em construção... 
+	  STATUS: Concluído 
 </h4>
